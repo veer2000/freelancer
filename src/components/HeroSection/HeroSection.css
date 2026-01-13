@@ -1,0 +1,176 @@
+.hero {
+  padding: 70px 0 40px;
+}
+
+.hero__container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 30px;
+  align-items: center;
+}
+
+.hero__badge {
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: #f2f2f2;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.hero__title {
+  margin: 14px 0 12px;
+  font-size: 44px;
+  line-height: 1.08;
+  letter-spacing: -0.4px;
+}
+
+.hero__subtitle {
+  font-size: 17px;
+  line-height: 1.6;
+  opacity: 0.9;
+  max-width: 55ch;
+}
+
+.hero__actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 14px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 700;
+  border: 1px solid transparent;
+}
+
+.btn--primary {
+  background: #111;
+  color: #fff;
+}
+
+.btn--secondary {
+  background: #fff;
+  color: #111;
+  border-color: #ddd;
+}
+
+.hero__stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.stat {
+  padding: 12px;
+  border: 1px solid #eee;
+  border-radius: 14px;
+  background: #fff;
+}
+
+.stat__num {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.stat__text {
+  font-weight: 600;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.mock {
+  border-radius: 18px;
+  border: 1px solid #eee;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  background: #fff;
+}
+
+.mock__top {
+  display: flex;
+  gap: 8px;
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  background: #fafafa;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: #ddd;
+}
+
+.mock__body {
+  padding: 16px;
+}
+
+.mock__label {
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.mock__card {
+  padding: 12px;
+  border: 1px solid #eee;
+  border-radius: 14px;
+  margin-bottom: 10px;
+}
+
+.mock__title {
+  font-weight: 800;
+  margin: 0 0 6px;
+}
+
+.mock__meta {
+  margin: 0 0 10px;
+  opacity: 0.8;
+  font-size: 14px;
+}
+
+.mock__bar {
+  height: 10px;
+  border-radius: 999px;
+  background: #f2f2f2;
+  overflow: hidden;
+}
+
+.mock__fill {
+  height: 100%;
+  background: #111;
+}
+
+.mock__score {
+  margin: 8px 0 0;
+  font-weight: 700;
+  font-size: 13px;
+  opacity: 0.9;
+}
+
+.mock__hint {
+  margin-top: 12px;
+  font-size: 13px;
+  opacity: 0.7;
+}
+
+@media (max-width: 900px) {
+  .hero__container {
+    grid-template-columns: 1fr;
+  }
+  .hero__title {
+    font-size: 34px;
+  }
+  .hero__stats {
+    grid-template-columns: 1fr;
+  }
+}
