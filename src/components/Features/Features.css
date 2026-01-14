@@ -25,6 +25,12 @@
   gap: 14px;
 }
 
+.feature:hover{
+  transform: translateY(-10px); 
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
 .feature {
   padding: 16px;
   border: 1px solid #eee;
