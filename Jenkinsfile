@@ -29,13 +29,14 @@ pipeline {
     }
 
     stage("Start/Update containers") {
-      steps {
-        sh '''
-          set -e
-          docker compose -f docker-compose.yaml up -d --build
-          docker compose -f docker-compose.yaml ps
-        '''
-      }
+        steps {
+            sh '''
+            set -e
+            docker compose -f docker-compose.yaml down || true
+            docker compose -f docker-compose.yaml up -d --build
+            docker compose -f docker-compose.yaml ps
+            '''
+        }
     }
   }
 }
