@@ -1,0 +1,12 @@
+cd ~/app/freelancer
+cat > .dockerignore <<'EOF'
+.git
+node_modules
+dist
+.vscode
+.idea
+npm-debug.log*
+Dockerfile
+docker-compose*.yml
+docker-compose*.yaml
+EOF
